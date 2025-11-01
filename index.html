@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2048 Game by Hosea James Zacarias</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>2048</h1>
+  <hr>
+  <h2>Score: <span id="score">0</span></h2>
+
+  <!-- Game container to keep board + button grouped -->
+  <div class="game-container">
+    <div id="board"></div>
+    <!-- setting up the game over panel -->
+    <div id="gameOver" class="hidden">
+      <div class="panel">
+        <h3>Game Over</h3>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <button id="tryAgainBtn" type="button">Try Again</button>
+      </div>
+    </div>
+
+    <button id="restartBtn" type="button">Restart</button>
+  </div>
+</body>
+</html>
